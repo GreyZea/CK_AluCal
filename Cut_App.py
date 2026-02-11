@@ -56,7 +56,7 @@ if check_password():  # ตรวจสอบรหัสผ่านก่อ�
     with st.sidebar:
         st.header("⚙️ Settings")
         stock_len = st.number_input("ความยาวเส้นมาตรฐาน (ซม.)", value=640.0)
-        kerf_val = st.number_input("ความหนาใบตัด (ซม.)", value=0.5)
+        kerf_val = st.number_input("ความหนาใบตัด (ซม.)", value=0.3)
         if st.button("🧹 ล้างข้อมูล"):
             st.session_state.projects = [{'name': 'ชนิดที่ 1', 'items': [{'len': 100.0, 'qty': 1}]}]
             st.rerun()
